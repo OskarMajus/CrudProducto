@@ -25,6 +25,15 @@ namespace CrudProducto
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //PLUGINS
+            bundles.Add(new StyleBundle("~/Content/Plugin/css").Include(
+                      "~/Content/datatable/css/jquery.dataTables.min.css"
+                      ));
+
+            bundles.Add(new StyleBundle("~/Content/Plugin/js").Include(
+                     "~/Content/datatable/js/jquery.dataTables.min.js"
+                     ));
         }
     }
 }
